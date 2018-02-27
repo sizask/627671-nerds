@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Елена Сизаск](https://up.htmlacademy.ru/htmlcss/20/user/627671).
-* Наставник: `Неизвестно`.
+* Наставник: `[Елена Забара] (https://htmlacademy.ru/profile/lena___elena)`.
 
 ---
 
