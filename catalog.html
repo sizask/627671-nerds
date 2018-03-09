@@ -7,7 +7,7 @@
   <body>
     <header class="main-header">
       <a class="main-header-logo" href="index.html">
-        <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип студии Нёрдс">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
       </a>
       <nav class="main-navi">
         <ul class="site-nav">
@@ -17,7 +17,7 @@
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="user-nav">
-          <li class="cart"><a>Корзина</a></li>
+          <li class="cart"><a href="cart.html">Корзина</a></li>
         </ul>
       </nav>
     </header>
@@ -27,9 +27,39 @@
 
       <section class="filters">
         <div class="filters-form">
-          <h2>Стоимость</h2>
-        <!-- Здесь будет форма сортировки с бегунком -->
-         <button>ПОКАЗАТЬ</button>
+
+          <form name="price" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="filters-cost-site">
+              <legend><h2>Стоимость:</h2></legend>
+              <label for="cost">
+             0 <input type="range" id="cost" name="cost" min="0" max="20000"> 20000
+                <div class="filters-cost-site-output">
+                  от <output name="sum">0</output>
+                  до <output name="sum">15000</output>
+                </div>
+              </label>
+            </fieldset>
+
+            <fieldset class="filters-net-type">
+              <legend><h2>Сетка:</h2></legend>
+              <label><input type="radio" name="net-type-check" value="adapt" checked>Адаптивная</label>
+              <label><input type="radio" name="net-type-check" value="fix">Фиксированная</label>
+              <label><input type="radio" name="net-type-check" value="elastic">Резиновая</label>
+            </fieldset>
+
+            <fieldset class="filters-features">
+              <legend><h2>Особенности:</h2></legend>
+              <label><input type="checkbox" name="filters-features-slider" checked>Слайдер</label>
+              <label><input type="checkbox" name="filters-features-featuresblock">Блок преимуществ</label>
+              <label><input type="checkbox" name="filters-features-news" checked>Новости</label>
+              <label><input type="checkbox" name="filters-features-galery">Галерея</label>
+              <label><input type="checkbox" name="filters-features-cart">Корзина</label>
+            </fieldset>
+
+          <button class="button">ПОКАЗАТЬ</button>
+          </form>
+
+
         </div>
 
         <div class="filters-sort">Сортировать
@@ -100,7 +130,7 @@
 
 
       <div class="contacts-info">
-        <img  src="img/map.jpg" width="1725" height="808" alt="Карта проезда" >
+        <img  src="img/map.jpg" width="1725" height="808" alt="Карта проезда Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8" >
 
         <div class="adress">
         <h2 class="visually-hidden">Контактная информация</h2>
@@ -108,7 +138,7 @@
            Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
            тел. +7 (812) 275-75-75
         </p>
-        <button>НАПИШИТЕ НАМ</button>
+        <button class="button">НАПИШИТЕ НАМ</button>
         </div>
       </div>
 
@@ -130,13 +160,31 @@
 
     <section class="form-post">
       <h2>Напишите нам</h2>
-      <p>Ваше имя:</p>
-      <p>Ваш e-mail:</p>
-      <p>Текст письма:</p>
-      <!-- Здесь будет форма -->
-      <input type="submit" name="form-post" value="ОТПРАВИТЬ">
-      <span class="form-post-close">x</span>
+      <form class="form-post-list" action="https://echo.htmlacademy.ru" method="post">
+        <p class="post-item">
+          <label for="user-name">Ваше имя:</label>
+          <input type="text" name="user-name" id="user-name"  autofocus placeholder="Напишите свое имя" required>
+        </p>
+
+        <p class="post-item">
+          <label for="user-mail">Ваш e-mail:</label>
+          <input type="e-mail" name="user-mail" id="user-mail" placeholder="Напишите свой адрес почты" required>
+        </p>
+
+        <p class="post-item">
+          <label for="text-letter">Текст письма:</label>
+          <textarea name="text-letter" id="text-letter" value="Текст письма" required>
+          </textarea>
+        </p>
+
+        <button  class="button" type="submit" name="form-post" value="Отправлено из почтовой формы сайта">Отправить</button>
+      </form>
+
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
+
+
+
   </body>
 </html>
 
