@@ -34,17 +34,17 @@
               <label for="cost">
              0 <input type="range" id="cost" name="cost" min="0" max="20000"> 20000
                 <div class="filters-cost-site-output">
-                  от <output name="sum">0</output>
-                  до <output name="sum">15000</output>
+                  <label>от <input type="text" placeholder="0"></label>
+                  <label>до <input type="text" placeholder="15000"></label>
                 </div>
               </label>
             </fieldset>
 
-            <fieldset class="filters-net-type">
+            <fieldset class="filters-site-type">
               <legend><h2>Сетка:</h2></legend>
-              <label><input type="radio" name="net-type-check" value="adapt" checked>Адаптивная</label>
-              <label><input type="radio" name="net-type-check" value="fix">Фиксированная</label>
-              <label><input type="radio" name="net-type-check" value="elastic">Резиновая</label>
+              <label><input type="radio" name="site-type-check" value="adapt" checked>Адаптивная</label>
+              <label><input type="radio" name="site-type-check" value="fix">Фиксированная</label>
+              <label><input type="radio" name="site-type-check" value="elastic">Резиновая</label>
             </fieldset>
 
             <fieldset class="filters-features">
@@ -56,7 +56,7 @@
               <label><input type="checkbox" name="filters-features-cart">Корзина</label>
             </fieldset>
 
-          <button class="button">ПОКАЗАТЬ</button>
+          <button type="submit" class="button">ПОКАЗАТЬ</button>
           </form>
 
 
@@ -138,7 +138,7 @@
            Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
            тел. +7 (812) 275-75-75
         </p>
-        <button class="button">НАПИШИТЕ НАМ</button>
+        <a class="button" href="#">Напишите нам</a>
         </div>
       </div>
 
