@@ -32,12 +32,13 @@
             <fieldset class="filters-cost-site">
               <legend><h2>Стоимость:</h2></legend>
               <label for="cost">
-             0 <input type="range" id="cost" name="cost" min="0" max="20000"> 20000
-                <div class="filters-cost-site-output">
-                  <label>от <input type="text" placeholder="0"></label>
-                  <label>до <input type="text" placeholder="15000"></label>
-                </div>
-              </label>
+             0 <input type="range" id="cost" name="cost" min="0" max="20000"> 20000</label>
+
+              <div class="filters-cost-site-output">
+                <label>от <input type="text" placeholder="0"></label>
+                <label>до <input type="text" placeholder="15000"></label>
+              </div>
+
             </fieldset>
 
             <fieldset class="filters-site-type">
@@ -114,7 +115,6 @@
           <li class="catalog-item">
             <h3><a href="catalog-item.html">KVAST</a></h3>
             <img src="img/img-kvast.jpg" width="360" height="576" alt="Макет Кваст, промосайт производителя кваса">
-            </p>
             <a class="button" href="#">9 900 РУБ.</a>
           </li>
 
@@ -168,12 +168,12 @@
 
         <p class="post-item">
           <label for="user-mail">Ваш e-mail:</label>
-          <input type="e-mail" name="user-mail" id="user-mail" placeholder="Напишите свой адрес почты" required>
+          <input type="email" name="user-mail" id="user-mail" placeholder="Напишите свой адрес почты" required>
         </p>
 
         <p class="post-item">
           <label for="text-letter">Текст письма:</label>
-          <textarea name="text-letter" id="text-letter" value="Текст письма" required>
+          <textarea name="text-letter" id="text-letter" required>
           </textarea>
         </p>
 
