@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #283136;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-nav {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.site-nav,
+.user-nav {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.site-nav a,
+.user-nav a {
+  color: #000000;}
+
+
+.site-nav a:hover,
+.site-nav a:focus,
+.user-nav a:hover,
+.user-nav a:focus  {
+  color: #fb565a;
+}
+
+
+.site-nav a:active,
+.user-nav a:active {
+  color: #a6a6a6;
+}
+
+.motto-list {
+  list-style: none;
+  background: #eeeeee;
+ }
+
+.motto-list-item {
+  font: inherit;
+  text-align:left;
+}
+
+
+.motto-list-item h3 {
+  font-size: 55px;
+  font-weight: bold;
+  line-height: 55px;
+  color: #000000;
+}
+.motto-btn{
+  font: inherit;
+  font-weight: bold;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border: none;
+}
+
+.motto-btn:hover,
+.motto-btn:focus, {
+  background-color: #e74246;
+}
+
+.motto-btn:active {
+  color: rgba(255, 255, 255, 0.302);
+  background-color: #d7373b;
+}
+
+.service {
+  list-style: none;
+  text-align: left;
+}
+
+.service-header {
+  font-size: 24px;
+  line-height: 30px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+
+  text-transform: uppercase;
+}
+
+.service-list {
+  list-style: none;
+
+}
+
+.button {
+  font: inherit;
+  font-weight: bold;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #fb565a;
+
+}
+.service-list .button:ntf-of-type(2) {
+  background-color: rgb(0, 0, 0);
+}
