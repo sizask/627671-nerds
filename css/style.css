@@ -27,9 +27,15 @@ a {
   text-transform: uppercase;
 }
 
+ /*color: #a6a6a6;*/
 .site-nav a,
 .user-nav a {
-  color: #000000;}
+  color: #000000;
+}
+
+
+/*.site-navigation-current {
+  color: #000000;}*/
 
 
 .site-nav a:hover,
@@ -39,10 +45,12 @@ a {
   color: #fb565a;
 }
 
+  /*text-decoration: underline red;*/
+
 
 .site-nav a:active,
 .user-nav a:active {
-  color: #a6a6a6;
+ color: rgba(0, 0, 0, 0.302);
 }
 
 .motto-list {
@@ -112,9 +120,85 @@ a {
   color: #ffffff;
   vertical-align: middle;
   text-transform: uppercase;
-  background-color: #fb565a;
-
+ /* background-color: #fb565a;*/
 }
-.service-list .button:ntf-of-type(2) {
-  background-color: rgb(0, 0, 0);
+
+.button-red {
+  font: inherit;
+  color: #ffffff;
+  background-color: #fb565a;
+}
+.button-green {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.button-yellow {
+  color: #ffffff;
+  background-color: #000000;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.partners-list {
+  list-style: none;
+  background-color: ;
+}
+
+.partners-list:hover,
+.partners-list:active {
+  background-color: ;
+}
+
+.footer-social ul{
+  list-style: none;
+}
+
+.inner-page h1 {
+  font-size: 55px;
+  color: #000000;
+  line-height: 55px;
+  text-align: center;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-list a {
+  color: #ffffff;
+}
+.pagination-list {
+  list-style: none;
+}
+.filters fieldset {
+  border: none;
+}
+.filters-site-type h2,
+.filters-features h2,
+.filters-cost-site h2 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.filters-sort {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.filters-sort a{
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
 }
