@@ -13,7 +13,9 @@ a {
   text-decoration: none;
   text-transform: uppercase;
 }
-
+header {
+  background: #eeeeee;
+}
 .main-nav {
   font-size: 16px;
   line-height: 30px;
@@ -45,12 +47,22 @@ a {
   color: #fb565a;
 }
 
-  /*text-decoration: underline red;*/
+  /*text-decoration: underline ;*/
 
 
 .site-nav a:active,
 .user-nav a:active {
  color: rgba(0, 0, 0, 0.302);
+}
+
+.main-header-logo a:hover,
+.main-header-logo a:focus {
+  color: rgba(0, 0, 0, 0.8);
+
+}
+
+.main-header-logo a:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .motto-list {
@@ -130,32 +142,100 @@ a {
 }
 .button-green {
   color: #ffffff;
-  background-color: #000000;
+  background-color: #00ca74;
 }
 
 .button-yellow {
   color: #ffffff;
-  background-color: #000000;
+  background-color: #efc84a;
 }
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+.about-loud b {
+  font-size: 45px;
+  line-height: 45px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: left;
 }
+.facts p{
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+}
+.facts-list th{
+  font-size: 45px;
+  line-height: 10.6px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+}
+.facts-list td {
+  font-size: 16px;
+  line-height: 18px;
+  color: rgb(0, 0, 0);
+}
+
+
 .partners-list {
   list-style: none;
-  background-color: ;
 }
 
-.partners-list:hover,
-.partners-list:active {
-  background-color: ;
+.partners-list a {
+  color: rgba(0, 0, 0, 0.2);
 }
 
+.partners-list a:hover,
+.partners-list a:focus {
+  color:#000000;
+}
+.partners-list a:active {
+  color: rgba(0, 0, 0, 0.1);
+}
+.adress b {
+  font-size: 18px;
+  line-height: 30px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+}
+.adress p{
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+
+}
 .footer-social ul{
   list-style: none;
+}
+.footer-friends {
+  font-size: 36px;
+  line-height: 36px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: left;
+}
+.footer-sale {
+  font-size: 16px;
+  line-height: 22px;
+  color:#444444;
+}
+
+.social-button a {
+  color: #e1e1e1;
+}
+
+.form-post h2{
+  font-size: 45px;
+  line-height: 45px;
+  text-align: left;
+}
+.post-item label{
+  font-size: 16px;
+  line-height: 17px;
+  color: #000000;
 }
 
 .inner-page h1 {
@@ -169,8 +249,8 @@ a {
   list-style: none;
 }
 
-.catalog-list a {
-  color: #ffffff;
+a.catalog-list h3 {
+  color: #000000;
 }
 .pagination-list {
   list-style: none;
@@ -178,6 +258,7 @@ a {
 .filters fieldset {
   border: none;
 }
+
 .filters-site-type h2,
 .filters-features h2,
 .filters-cost-site h2 {
@@ -201,4 +282,18 @@ a {
   line-height: 18px;
   text-align: left;
   text-transform: uppercase;
+}
+
+.pagination-item a {
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
