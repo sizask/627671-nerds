@@ -15,7 +15,6 @@ a {
 
 .main-header {
   background: #eeeeee;
-  margin-bottom:0px;
 }
 
 
@@ -35,15 +34,15 @@ a {
 
 }
 
-.main-nav-wrapper {
+/*.main-nav-wrapp {
   width: 100%;
   margin-left: 40px;
   min-height: 75px;
   /*align-content: center;*/
 
- display: flex;
+/* display: flex;*/
 /*flex-direction: column;*/
-}
+/*}*/
 
 .main-nav a {
   color: #000000;
@@ -105,37 +104,45 @@ a {
   opacity: 0.3;
 }
 .motto {
+  width: 1440px;
   background: #eeeeee;
+
 }
+
 .motto-list {
   list-style: none;
-
   width: 1180px;
-  min-height: 412px;
-  margin-top: 0px;
+  margin-left: 100px;
+  min-height: 418px;
  }
 
-.motto-list-item h3 {
+.motto-header {
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
   color: #000000;
   display: flex;
+  padding-top: 70px;
+  margin-bottom: 25px;
   margin-top: 0px;
-  margin-bottom: 12px:
   /*background-image: url("img/slide1.png") no-repeat right;*/
 }
 
-.motto-list-item {
+.motto-list-item p{
   font-size: 16px;
   line-height: 24px;
+
   font-weight: 400;
   text-align:left;
-  margin-left: 100px;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 49px;
+  padding: 0px;
 }
 
-.motto-btn{
+.motto-btn {
   font: inherit;
+  display: block;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
