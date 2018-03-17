@@ -231,7 +231,7 @@ a {
   background-color: #e74246;
 }
 .button-red:active {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.302);
   background-color: #d7373b;
 }
 
@@ -245,7 +245,7 @@ a {
   background-color: #00bc6c;
 }
 .button-green:active {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.302);
   background-color: #00aa62;
 }
 
@@ -259,7 +259,7 @@ a {
   background-color: #eab534;
 }
 .button-yellow:active {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.302);
   background-color: #e5a722;
 }
 
@@ -330,14 +330,14 @@ a {
   display: flex;
   width: 1160px;
   margin-left: 100px;
-  justify-content: space-between;
+  justify-content: space-between;background-color: #efc84a;
 }
 
 .partners-list li{
   opacity: 0.2;
   display: flex;
 
-  background-color: #efc84a;
+
 }
 
 .partners-list li:hover {
@@ -500,9 +500,17 @@ a {
   text-align: left;
   text-transform: uppercase;
 }
-.filters-sort-items {}
+.filters-sort-items a:hover,
+.filters-sort-items a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
 
-.pagination-item a {
+.filters-sort-items a:active {
+  color: rgb(0, 0, 0);
+}
+
+
+.pagination-item a{
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
