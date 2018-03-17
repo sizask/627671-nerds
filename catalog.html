@@ -140,50 +140,63 @@
 
       <div class="contacts-info">
         <img  src="img/nerds-map.png" width="1440" height="422" alt="Карта проезда Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8" >
-
-        <div class="adress">
-        <h2 class="visually-hidden">Контактная информация</h2>
-        <p><b>NЁRDS DESIGN STUDIO</b><br>
-           г. Санкт-Петербург, <br>
-           Б. Конюшенная, д. 19/8<br>
-           <br>
-           тел. +7 (812) 275-75-75
-        </p>
-        <a class="button button-red" href="#">Напишите нам</a>
-        </div>
       </div>
 
     </main>
+
     <footer class="main-footer">
-      <div class="footer-social">
+      <div class="footer-wrap">
+        <div class="footer-social">
           <ul>
              <li><a class="social-button" href="#">Вконтакте</a></li>
              <li><a class="social-button" href="#">Фейсбук</a></li>
              <li><a class="social-button" href="#">Инстаграм</a></li>
           </ul>
-      </div>
-      <div>
+        </div>
+        <div>
          <p class="footer-friends">Давайте дружить, это выгодно!</p>
          <p class="footer-sale">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </div>
+    </footer>
 
     </footer>
 
-    <section class="form-post">
-      <h2>Напишите нам</h2>
-      <form class="form-post-list" action="https://echo.htmlacademy.ru" method="post">
-        <p class="post-item">
-          <label for="user-name">Ваше имя:</label>
-          <input type="text" name="user-name" id="user-name"  autofocus placeholder="Имя Фамилия" required>
+    <div class="adress">
+        <h2 class="visually-hidden">Контактная информация</h2>
+        <b>NЁRDS DESIGN STUDIO</b><br>
+        <p> г. Санкт-Петербург, <br>
+           Б. Конюшенная, д. 19/8<br>
+           <br>
+           тел. +7 (812) 275-75-75
         </p>
+        <a class="button button-red" href="#">Напишите нам</a>
+    </div>
 
-        <p class="post-item">
-          <label for="user-mail">Ваш e-mail:</label>
-          <input type="email" name="user-mail" id="user-mail" placeholder="email@example.com" required>
-        </p>
+    <section class="form-post">
+      <div class="modal-wrap">
+        <h2>Напишите нам</h2>
+        <button class="modal-close" type="button">Закрыть</button>
+      </div>
+
+      <form class="form-post-list" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form-post-wrapp">
+          <p class="post-item">
+            <label for="user-name">Ваше имя:</label>
+            <br>
+            <input type="text" name="user-name" id="user-name"  autofocus placeholder="Имя Фамилия" required>
+          </p>
+
+          <p class="post-item">
+            <label for="user-mail">Ваш e-mail:</label>
+            <br>
+            <input type="email" name="user-mail" id="user-mail" placeholder="email@example.com" required>
+          </p>
+      </div>
 
         <p class="post-item">
           <label for="text-letter">Текст письма:</label>
+          <br>
           <textarea name="text-letter" id="text-letter" placeholder="В свободной форме">
           </textarea>
         </p>
@@ -191,7 +204,7 @@
         <button class="button button-red" type="submit" name="form-post" value="Отправлено из почтовой формы сайта">Отправить</button>
       </form>
 
-      <button class="modal-close" type="button">Закрыть</button>
+
     </section>
 
 
