@@ -11,7 +11,7 @@
     <header class="main-header">
 
 
-      <nav class="main-nav">
+      <nav class="main-nav container">
         <a class="main-header-logo" href="index.html">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс" >
         </a>
@@ -28,7 +28,7 @@
       </nav>
     </header>
 
-    <main class="container">
+    <main>
       <h1 class="page-title">Магазин готовых шаблонов</h1>
       <div class="container-wrapp container">
         <section class="filters">
@@ -75,7 +75,8 @@
         <h2 class="visually-hidden">Список макетов</h2>
 
         <div class="filters-catalog-wrapp">
-          <div class="filters-sort">Сортировать
+          <div class="filters-sort">
+            <p>Сортировать</p>
             <ul class="filters-sort-list">
               <li><a href="#">По цене</a></li>
               <li><a href="#">По типу</a></li>
@@ -131,29 +132,34 @@
             </li>
 
           </ul>
+
+          <ul class="pagination-list">
+            <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+            <li class="pagination-item"><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item"><a href="#">Следующая </a></li>
+          </ul>
+
+
+
         </div>
       </section>
 </div>
-      <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">Следующая </a></li>
-      </ul>
+
 
 
 
 
       <div class="contacts-info">
         <div class="adress">
-        <h2 class="visually-hidden">Контактная информация</h2>
-        <b>NЁRDS DESIGN STUDIO</b><br>
-        <p> г. Санкт-Петербург, <br>
+          <h2 class="visually-hidden">Контактная информация</h2>
+          <b>NЁRDS DESIGN STUDIO</b><br>
+          <p> г. Санкт-Петербург, <br>
            Б. Конюшенная, д. 19/8<br>
            <br>
            тел. +7 (812) 275-75-75
-        </p>
-        <a class="button button-red" href="#">Напишите нам</a>
+          </p>
+          <a class="button button-red" href="#">Напишите нам</a>
         </div>
         <img  src="img/nerds-map.png" width="1440" height="422" alt="Карта проезда Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8" >
       </div>
@@ -161,15 +167,15 @@
     </main>
 
     <footer class="main-footer">
-      <div class="footer-wrap">
-        <div class="footer-social">
-          <ul>
+      <div class="footer-wrap container">
+
+          <ul class="footer-social">
              <li><a class="social-button" href="#">Вконтакте</a></li>
              <li><a class="social-button" href="#">Фейсбук</a></li>
              <li><a class="social-button" href="#">Инстаграм</a></li>
           </ul>
-        </div>
-        <div>
+
+        <div class="footer-friends-sale">
          <p class="footer-friends">Давайте дружить, это выгодно!</p>
          <p class="footer-sale">Скидка 10% для друзей из социальных сетей.</p>
         </div>
