@@ -8,10 +8,6 @@ body {
   font-weight: 400;
   color: #283136;
 }
-html {
- box-sizing: border-box;
-}
-
         *,
 *::before,
   *::after {
@@ -32,17 +28,18 @@ a {
   width: 1180px;
   padding: 10px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .main-nav {
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
-  /*width: 1160px;*/
   color: #000000;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 15px;
   outline: 2px solid black;
  }
 
@@ -60,7 +57,7 @@ a {
   width: 440px; outline: 2px solid red;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .user-nav {
@@ -109,65 +106,151 @@ a {
 }
 
 .motto {
+  position: relative;
+
   width: 100%;
   background: #eeeeee;
-  margin-bottom:  80px;
-  padding: 10px;
+  margin-bottom:  70px;
+  /*padding: 10px;
+  */
+}
+.motto-slider-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 104px;
+  z-index: 100;
+
+  width: 160px;
+  height: 18px;
+
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
 }
 
+.motto-slider-controls i{
+  position: relative;
+
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 8px;
+
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.motto-slider-controls i::after {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+
+  width: 18px;
+  height: 18px;
+
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.motto-slider-controls .active::before {
+  content: "";
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+
+  width: 4px;
+  height: 4px;
+  margin: -4px;
+
+  background-color: inherit;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+}
+
+
 .motto-list {
-  list-style: none;
+  margin: 0px;
   padding: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
 
- }
+  list-style: none;
+}
+.motto-list-item{
+  display: none;
+  padding: 51px 0 80px 0;
+}
 
+.motto-list-item:nth-child(1) {
+  display: block;
+}
+
+.motto-list-item:nth-child(1) {
+  display: block;
+  background-image: url("img/slide1.png");
+  background-repeat: no-repeat;
+  background-position: 93% 18px;
+}
+.motto-list-item:nth-child(2) {
+  background-image: url("img/slide2.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+
+.motto-list-item:nth-child(3) {
+  background-image: url("img/slide3.png");
+  background-repeat: no-repeat;
+  background-position: 100% 20px;
+}
 .motto-header {
+  max-width: 600px;
+  margin: 0px;
+  margin-bottom: 27px/*40px*/;
+
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
-  color: #000000;
-  display: flex;
+  /*color: #000000;*/
+
+  /*display: flex;
   padding-top: 55px;
-  margin-bottom: 40px;
-  margin-top: 0px;
-  /*background-image: url("img/slide1.png") no-repeat right;*/
+  */
 }
-.motto-list-item{
-  background-image: url("/img/slide1.png");
-}
-
 .motto-list-item p{
-  font-size: 16px;
-  line-height: 24px;
+  max-width: 430px;
+  margin: 0px;
+  margin-bottom: 38px;
 
+  /*font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   text-align:left;
-  margin-left: 0px;
-  margin-top: 0px;
-  margin-bottom: 45px;
-  padding: 0px;
-
+  padding: 0px;*/
 }
 
 .motto-btn {
-  font: inherit;
   display: block;
+  width: 240px;
+  padding: 13px 0;
+
+  font: inherit;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 500;
-  text-align: center;
+  /*font-weight: 500;*/
   color: #ffffff;
-  width: 240px;
-  height: 50px;
-  padding: 20px;
-  margin-bottom:  80px;
-  vertical-align: middle;
   text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
 
   background-color: #fb565a;
+  border-radius: 3px;
   border: none;
+  /*margin-bottom:  80px;
+  vertical-align: middle;*/
+   /*height: 50px;*/
 }
 
 .motto-btn:hover,
@@ -178,15 +261,15 @@ a {
 .motto-btn:active {
   color: rgba(255, 255, 255, 0.302);
   background-color: #d7373b;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
+
 
 .service {
   list-style: none;
   text-align: left;
-  margin-bottom: 80px;
+  margin-bottom: 10px;
 }
-
- /*background-color: yellow;*/
 
 .service-list {
   width: 1100px;
@@ -197,8 +280,7 @@ a {
   margin-bottom: 0px;
   padding: 0px;
   justify-content: space-between;
-  outline: 2px solid red;
-}
+  }
 
 .service-list-item {
   display: flex;
@@ -236,7 +318,7 @@ a {
   color: #ffffff;
   vertical-align: middle;
   text-transform: uppercase;
- /* background-color: #fb565a;*/
+
 }
 
 .button-red {
@@ -285,7 +367,7 @@ a {
 .about-facts-wrapp {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 80px;
+  margin-bottom: 35px;
 }
 
 .about {
@@ -315,8 +397,8 @@ a {
   text-align: left;
 }
 .facts-wrapp{
-  margin-bottom: 40px;
-  outline: 2px solid red;
+  margin-bottom: 98px;
+  /*outline: 2px solid red;*/
 }
 
 .facts {
@@ -365,7 +447,8 @@ a {
 
 }
 .partners{
-  outline: 2px solid grey;
+  /*outline: 2px solid grey;*/
+  margin-bottom: 28px;
 }
 
 .partners-list li{
@@ -388,19 +471,17 @@ a {
 
 .adress {
   box-sizing: border-box;
-  outline: 2px solid green;
   width: 320px;
   height: 310px;
-  padding: 54px 48px;
+  padding: 48px 48px;
   position: absolute;
-  left: 100px;
   top: 80px;
   background: #ffffff;
 }
 
 .contacts-info{
   width: 100%;
-  margin-bottom: 68px;
+  margin-bottom: 58px;
 }
 
 .adress b {
