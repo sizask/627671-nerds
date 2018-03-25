@@ -22,7 +22,7 @@
           </ul>
           <ul class="user-nav">
 
-            <li class="cart"><a class="login-link" href="cart.html"><span></span> Корзина</a></li>
+            <li class="cart"><a class="login-link" href="cart.html">Корзина</a></li>
           </ul>
 
       </nav>
@@ -228,35 +228,34 @@
 
 
 
-   <section class="form-post">
+   <section class="modal form-post">
       <div class="modal-wrap">
         <h2>Напишите нам</h2>
-        <button class="modal-close" type="button">Закрыть</button>
+        <button class="modal-close" type="button"><p class="visually-hidden">Закрыть</p></button>
       </div>
 
       <form class="form-post-list" action="https://echo.htmlacademy.ru" method="post">
         <div class="form-post-wrapp">
           <p class="post-item">
             <label for="user-name">Ваше имя:</label>
-            <br>
             <input type="text" name="user-name" id="user-name"  autofocus placeholder="Имя Фамилия" required>
           </p>
 
           <p class="post-item">
             <label for="user-mail">Ваш e-mail:</label>
-            <br>
+
             <input type="email" name="user-mail" id="user-mail" placeholder="email@example.com" required>
           </p>
       </div>
 
         <p class="post-item">
           <label for="text-letter">Текст письма:</label>
-          <br>
-          <textarea name="text-letter" id="text-letter" placeholder="В свободной форме">
+
+          <textarea name="text-letter" id="text-letter" rows="4" placeholder="В свободной форме">
           </textarea>
         </p>
 
-        <button class="button button-red" type="submit" name="form-post" value="Отправлено из почтовой формы сайта">Отправить</button>
+        <button class="button button-post" type="submit" name="form-post" value="Отправлено из почтовой формы сайта">Отправить</button>
       </form>
 
 

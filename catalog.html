@@ -62,9 +62,11 @@
 
             <fieldset class="filters-site-type">
               <legend><h2>Сетка:</h2></legend>
-              <label><input type="radio" name="site-type-check" value="adapt" checked>Адаптивная</label>
-              <label><input type="radio" name="site-type-check" value="fix">Фиксированная</label>
-              <label><input type="radio" name="site-type-check" value="elastic">Резиновая</label>
+              <p class="site-type">
+                <label class="filters-radio"><input type="radio" name="site-type-check" value="adapt" checked> <span>Адаптивная</span class="radio-indicator"></label>
+                <label><input type="radio" name="site-type-check" value="fix">Фиксированная</label>
+                <label><input type="radio" name="site-type-check" value="elastic">Резиновая</label>
+              </p>
             </fieldset>
 
             <fieldset class="filters-features">
@@ -91,57 +93,93 @@
           <div class="filters-sort">
             <p>Сортировать</p>
             <ul class="filters-sort-list">
-              <li><a href="#">По цене</a></li>
+              <li class="current-filtr"><a href="#">По цене</a></li>
               <li><a href="#">По типу</a></li>
               <li><a href="#">По названию</a></li>
-              <li><a href="#">вниз</a></li>
-              <li><a href="#">вверх</a></li>
+              <li><a href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt=""></a></li>
+              <li class="current-filtr"><a href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt=""></a></li>
             </ul>
           </div>
 
 
           <ul class="catalog-list">
             <li class="catalog-item">
-              <img src="img/img-sedona.jpg" width="360" height="576" alt="Макет Sedona, сайт для туристов">
-              <a href="catalog-item.html"><h3>Sedona</h3></a>
-              <p>Информационный сайт <br> для туристов</p>
-              <a class="button  button-red" href="#">9 900 РУБ.</a>
+              <div class="model-page">
+                <span class="current-model"><img src="img/browser.svg" width="360" height="40" alt="browser-window"></span>
+                <img src="img/img-sedona.jpg" width="360" height="576" alt="Макет Sedona, сайт для туристов">
+
+                <div class="catalog-modal">
+                  <a href="catalog-item.html"><h3>Sedona</h3></a>
+                  <p>Информационный сайт <br> для туристов</p>
+                  <a class="button  button-red" href="#">9 900 РУБ.</a>
+                </div>
+              </div>
             </li>
 
             <li class="catalog-item">
-              <img src="img/img-pink.jpg" width="360" height="576" alt="Макет Pink APP, продуктовый лендинг приложений">
-              <a href="catalog-item.html"><h3>Pink</h3></a>
-              <p>Продуктовый лендинг<br>
-               приложения для iOS и Android</p>
-              <a class="button button-red" href="#">9 900 РУБ.</a>
+              <div class="model-page">
+                <span><img src="img/browser.svg" width="360" height="40" alt="browser-window"></span>
+                <img src="img/img-pink.jpg" width="360" height="576" alt="Макет Pink APP, продуктовый лендинг приложений">
+
+                <div class="catalog-modal">
+                  <a href="catalog-item.html"><h3>Pink APP</h3></a>
+                  <p>Продуктовый лендинг<br>
+                   приложения для iOS и Android</p>
+                  <a class="button button-red" href="#">9 900 РУБ.</a>
+                </div>
+              </div>
             </li>
 
             <li class="catalog-item">
-            <img src="img/img-barbershop.jpg" width="360" height="576" alt="Макет Barbershop,сайт салона красоты для мужчин">
-            <a href="catalog-item.html"><h3>Barbershop</h3></a>
-            <p>Сайт салоны красоты. <br> Для мужчин, да.</p>
-            <a class="button button-red" href="#">9 900 РУБ.</a>
+              <div class="model-page">
+                <span><img src="img/browser.svg" width="360" height="40" alt="browser-window"></span>
+                <img src="img/img-barbershop.jpg" width="360" height="576" alt="Макет Barbershop,сайт салона красоты для мужчин">
+
+                <div class="catalog-modal">
+                  <a href="catalog-item.html"><h3>Barbershop</h3></a>
+                  <p>Сайт салоны красоты. <br> Для мужчин, да.</p>
+                  <a class="button button-red" href="#">9 900 РУБ.</a>
+                </div>
+              </div>
             </li>
 
             <li class="catalog-item">
-            <img src="img/img-mishka.jpg" width="360" height="576" alt="Макет MISHKA, интернет-магазин вязаных игрушек">
-            <a href="catalog-item.html"><h3>MISHKA</h3></a>
-            <p>Интернет-магазин <br>вязаных игрушек</p>
-            <a class="button button-red" href="#">9 900 РУБ.</a>
+              <div class="model-page">
+                <span><img src="img/browser.svg" width="360" height="40" alt="browser-window"></span>
+                <img src="img/img-mishka.jpg" width="360" height="576" alt="Макет MISHKA, интернет-магазин вязаных игрушек">
+
+                <div class="catalog-modal">
+                  <a href="catalog-item.html"><h3>MISHKA</h3></a>
+                  <p>Интернет-магазин <br>вязаных игрушек</p>
+                  <a class="button button-red" href="#">9 900 РУБ.</a>
+                </div>
+              </div>
             </li>
 
             <li class="catalog-item">
-              <img src="img/img-aplus.jpg" width="360" height="576" alt=" Макет A Plus, лендинг курсов повышения квалификации">
-              <a href="catalog-item.html"><h3>A Plus</h3></a>
-              <p>Лендинг курсов повышения <br>квалификации</p>
-              <a class="button button-red" href="#">9 900 РУБ.</a>
+              <div class="model-page">
+                <span><img src="img/browser.svg" width="360" height="40" alt="browser-window"></span>
+                <img src="img/img-aplus.jpg" width="360" height="576" alt=" Макет A Plus, лендинг курсов повышения квалификации">
+
+                <div class="catalog-modal">
+                  <a href="catalog-item.html"><h3>A Plus</h3></a>
+                  <p>Лендинг курсов повышения <br>квалификации</p>
+                  <a class="button button-red" href="#">9 900 РУБ.</a>
+                </div>
+              </div>
             </li>
 
             <li class="catalog-item">
-            <img src="img/img-kvast.jpg" width="360" height="576" alt="Макет Кваст, промосайт производителя кваса">
-            <a href="catalog-item.html"><h3>КВАСТ</h3></a>
-            <p>Промо-сайт производителя <br>крафтового кваса</p>
-            <a class="button button-red" href="#">9 900 РУБ.</a>
+              <div class="model-page">
+                <span><img src="img/browser.svg" width="360" height="40" alt="browser-window"></span>
+                <img src="img/img-kvast.jpg" width="360" height="576" alt="Макет Кваст, промосайт производителя кваса">
+
+                <div class="catalog-modal">
+                  <a href="catalog-item.html"><h3>КВАСТ</h3></a>
+                  <p>Промо-сайт производителя <br>крафтового кваса</p>
+                  <a class="button button-red" href="#">9 900 РУБ.</a>
+                </div>
+            </div>
             </li>
 
           </ul>
@@ -205,40 +243,38 @@
       </div>
     </footer>
 
-    <section class="form-post">
+    <section class="modal form-post">
       <div class="modal-wrap">
         <h2>Напишите нам</h2>
-        <button class="modal-close" type="button">Закрыть</button>
+        <button class="modal-close" type="button"><p class="visually-hidden">Закрыть</p></button>
       </div>
 
       <form class="form-post-list" action="https://echo.htmlacademy.ru" method="post">
         <div class="form-post-wrapp">
           <p class="post-item">
             <label for="user-name">Ваше имя:</label>
-            <br>
             <input type="text" name="user-name" id="user-name"  autofocus placeholder="Имя Фамилия" required>
           </p>
 
           <p class="post-item">
             <label for="user-mail">Ваш e-mail:</label>
-            <br>
+
             <input type="email" name="user-mail" id="user-mail" placeholder="email@example.com" required>
           </p>
       </div>
 
         <p class="post-item">
           <label for="text-letter">Текст письма:</label>
-          <br>
-          <textarea name="text-letter" id="text-letter" placeholder="В свободной форме">
+
+          <textarea name="text-letter" id="text-letter" rows="4" placeholder="В свободной форме">
           </textarea>
         </p>
 
-        <button class="button button-red" type="submit" name="form-post" value="Отправлено из почтовой формы сайта">Отправить</button>
+        <button class="button button-post" type="submit" name="form-post" value="Отправлено из почтовой формы сайта">Отправить</button>
       </form>
 
 
     </section>
-
 
 
   </body>
