@@ -517,7 +517,7 @@ a {
   left:1px;
   width: 25px;
   height: 2px;
-  background-color: red;
+  background-color: #fb565a;
 }
 
 /*.facts-wrapp{
@@ -552,23 +552,25 @@ a {
   width: 360px;
 }
 .facts-list th{
+  width: auto;
   font-size: 45px;
   line-height: 10.6px;
   color: rgb(0, 0, 0);
   font-weight: bold;
   margin-top: 0px;
-  padding: 28px 0px;
+  padding: 30px 3px;
   margin-bottom: 28px;
   text-align: left;
 
-  background-color: yellow;
+  /*background-color: yellow;*/
 }
 
 .facts-list td {
+  padding-top: 6px;
   font-size: 16px;
   line-height: 18px;
   color: #283136;
-  background-color: yellow;
+  /*background-color: yellow;*/
 }
 
 
@@ -579,29 +581,30 @@ a {
 .partners-list {
   list-style: none;
   position: relative;
-  width: 1124px;
+  width: 100%;
   margin: 0px;
-  padding-top: 50px;
-  padding-right: 10px;
-  padding-bottom: 30px;
-  padding-left: 30px;
+  margin-right: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.partners-list::before{
+.partners-list::after{
   content: "";
   position: absolute;
-  bottom: 0px;
+  bottom: 5px;
   left:0px;
   width: 100%;
   height: 2px;
   background-color:#f4f4f4;
 }
-.partners-list::after{
+.partners-list::before{
   content: "";
   position: absolute;
-  top: 0px;
+  top: -3px;
   left:0px;
   width: 100%;
   height: 2px;
@@ -615,32 +618,33 @@ a {
 .logo1::before {
   content: "";
   position: absolute;
-  top:3px;
-  left: 247px;
+  top:61px;
+  left: 277px;
   width: 2px;
-  height: 50px;
+  height: 51px;
   background-color:#f4f4f4;
 }
 .logo2::before {
   content: "";
   position: absolute;
-  top:14px;
-  left: 242px;
+  top:61px;
+  left: 277px;
   width: 2px;
-  height: 50px;
+  height: 51px;
   background-color:#f4f4f4;
 }
 .logo3::before {
   content: "";
   position: absolute;
-  top:0px;
-  left: 227px;
+  top: 61px;
+  left: 277px;
   width: 2px;
-  height: 50px;
+  height: 51px;
   background-color:#f4f4f4;
-  opacity: 1;
+
 }
 .partners-logo {
+  display: block;
   opacity: 0.2;
 }
 
@@ -652,6 +656,8 @@ a {
 .partners-logo:focus {
   opacity: 0.1;
 }
+
+
 
 .container-relative {
    position: relative;
@@ -692,7 +698,7 @@ a {
 }
 .button-adres{
    display: block;
-  width: 200px;
+  width: 220px;
   padding: 13px 0;
 
   font: inherit;
@@ -1087,12 +1093,128 @@ textarea::placeholder {
 .max-price {
   text-align: right;
 }
+.sort-site {
+  position: relative;
+}
 
-.sort-site label{
+===============
+.filter fieldset {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+
+  border: none;
+}
+
+.filter fieldset:first-child {
+  margin-bottom: 35px;
+}
+
+.filter legend {
+  margin-bottom: 26px;
+
+  font-size: 24px;
+  line-height: 30px;
+}
+.filter ul {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+  line-height: 18px;
+}
+
+.syte-type {
+  margin-bottom: 19px;
+  padding-left: 45px;
+}
+
+.syte-type label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #663d15;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: 0;
+
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #000000;
+}
+.filter-input-checkbox:checked + label::after {
+  content: "";
+
+  position: absolute;
+  top: 4px;
+  left: -38px;
+
+  width: 12px;
+  height: 12px;
+
+  background-image: url("img/cross.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+
+  position: absolute;
+  left: -42px;
+  top: -1px;
+
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+
+.filter-input:disabled + label {
+  color: #000000;
+
+  opacity: 0.5;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+
+  position: absolute;
+  top: 5px;
+  left: -36px;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: #000000;
+  border-radius: 50%;
+}
+/*.sort-site label{
+
   font-size: 16px;
   line-height: 20px;
   text-align: left;
   margin-bottom: 20px;
+}
+.sort-site label::before{
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/radio-on.svg");
 }
 .sort-site .site-type {
   display: flex;
@@ -1119,7 +1241,13 @@ textarea::placeholder {
 
   border: 2px solid #000000;
 }
-
+.filters-radio label::before{
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/radio-on.svg");
+}
 .filters-site-type{
   display: flex;
   flex-direction: column;
@@ -1144,7 +1272,7 @@ textarea::placeholder {
   color: #283136;
   text-transform: uppercase;
 }
-
+*/
 .button-grey {
     font: inherit;
     font-size: 16px;
@@ -1400,10 +1528,21 @@ textarea::placeholder {
   color: #000000;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
+
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
+

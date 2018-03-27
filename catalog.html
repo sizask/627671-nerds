@@ -54,20 +54,43 @@
 
             <fieldset class="filters-site-type">
               <legend><h2>Сетка:</h2></legend>
-              <p class="site-type">
-                <label class="filters-radio"><input type="radio" name="site-type-check" value="adapt" checked> <span>Адаптивная</span class="radio-indicator"></label>
-                <label><input type="radio" name="site-type-check" value="fix">Фиксированная</label>
-                <label><input type="radio" name="site-type-check" value="elastic">Резиновая</label>
-              </p>
+              <ul>
+                <li class="site-type">
+                  <label class="filters-radio">
+                    <input class="visually-hidden filter-input filter-input-radio"" type="radio" name="site-type-check" value="adapt" checked>
+                      <span>Адаптивная</span class="radio-indicator">
+                  </label>
+                </li>
+                <li class="site-type">
+                  <label class="filters-radio">
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="site-type-check" value="fix">Фиксированная</label>
+                </li>
+                <li class="site-type">
+                  <label class="filters-radio">
+                    <input class="visually-hidden filter-input filter-input-radio"type="radio" name="site-type-check" value="elastic">Резиновая</label>
+                </li>
+              </ul>
             </fieldset>
 
             <fieldset class="filters-features">
               <legend><h2>Особенности:</h2></legend>
-              <label><input type="checkbox" name="filters-features-slider" checked>Слайдер</label>
-              <label><input type="checkbox" name="filters-features-featuresblock">Блок преимуществ</label>
-              <label><input type="checkbox" name="filters-features-news" checked>Новости</label>
-              <label><input type="checkbox" name="filters-features-galery">Галерея</label>
-              <label><input type="checkbox" name="filters-features-cart">Корзина</label>
+              <ul>
+                <li>
+                 <label><input type="checkbox" name="filters-features-slider" checked>Слайдер</label>
+                </li>
+                <li>
+                  <label><input type="checkbox" name="filters-features-featuresblock">Блок преимуществ</label>
+                </li>
+                <li>
+                  <label><input type="checkbox" name="filters-features-news" checked>Новости</label>
+                </li>
+                <li>
+                  <label><input type="checkbox" name="filters-features-galery">Галерея</label>
+                </li>
+                <li>
+                  <label><input type="checkbox" name="filters-features-cart">Корзина</label>
+                </li>
+              </ul>
             </fieldset>
 
           <button type="submit" class="button button-grey">ПОКАЗАТЬ</button>
