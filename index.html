@@ -32,47 +32,40 @@
       <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
 
       <section class="motto">
-        <div class="slider container">
-        <h2 class="visually-hidden">Слоганы и девизы</h2>
-        <div class="motto-slider-controls">
-          <i class="active"></i>
-          <i></i>
-          <i></i>
-        </div>
-
-
-
-
-        <ul class="motto-list container">
-          <li class="motto-list-item">
-            <h3 class="motto-header">Долго, дорого, <br>
-            скрупулезно.</h3>
-            <p>Математически выверенный дизайн
-               <br>для вашего сайта или мобильного приложения.</p>
-            <a class="motto-btn" href="studio.html">УЗНАТЬ БОЛЬШЕ</a>
-          </li>
-
-          <li class="motto-list-item">
-            <h3 class="motto-header">Любим математику
-                <br>как никто другой</h3>
-            <p>Никакого креатива, только математические формулы
-                <br>для расчета идеальных пропорций.</p>
-            <a class="motto-btn" href="studio.html">УЗНАТЬ БОЛЬШЕ</a>
-            <!-- будет фоном <img src="img/slide2.png" width="698" height="413" alt="slider2"> -->
+        <div class="motto-wrap container">
+          <h2 class="visually-hidden">Слоганы и девизы</h2>
+          <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+          <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+          <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+          <div class="motto-controls">
+            <label class="motto-controls-item motto-controls-item--1" for="product-1">Первый</label>
+            <label class="motto-controls-item motto-controls-item--2" for="product-2">Второй</label>
+            <label class="motto-controls-item motto-controls-item--3" for="product-3">Третий</label>
+          </div>
+          <ul class="motto-list">
+            <li class="motto-list-item">
+              <h3 class="motto-header">Долго, дорого, <br>
+              скрупулезно.</h3>
+              <p>Математически выверенный дизайн
+                 <br>для вашего сайта или мобильного приложения.</p>
+              <a class="motto-btn" href="studio.html">УЗНАТЬ БОЛЬШЕ</a>
             </li>
-
-          <li class="motto-list-item">
-            <h3 class="motto-header">Только ночь,
-                <br>только хардкор</h3>
-            <p>Работать днем, как все? Мы против этого.
-                <br>Ближе к полуночи работа только начинается.</p>
-            <a class="motto-btn" href="studio.html">УЗНАТЬ БОЛЬШЕ</a><span>три точки</span>
-            <!-- <img src="img/slide3.png" width="698" height="413" alt="slider3"> -->
-          </li>
-        </ul>
-      </div>
-
-
+            <li class="motto-list-item">
+              <h3 class="motto-header">Любим математику
+                  <br>как никто другой</h3>
+              <p>Никакого креатива, только математические формулы
+                  <br>для расчета идеальных пропорций.</p>
+              <a class="motto-btn" href="studio.html">УЗНАТЬ БОЛЬШЕ</a>
+            </li>
+            <li class="motto-list-item">
+              <h3 class="motto-header">Только ночь,
+                  <br>только хардкор</h3>
+              <p>Работать днем, как все? Мы против этого.
+                  <br>Ближе к полуночи работа только начинается.</p>
+              <a class="motto-btn" href="studio.html">УЗНАТЬ БОЛЬШЕ</a>
+            </li>
+            </ul>
+        </div>
       </section>
 
       <section class="service container">
@@ -238,21 +231,20 @@
         <div class="form-post-wrapp">
           <p class="post-item">
             <label for="user-name">Ваше имя:</label>
-            <input type="text" name="user-name" id="user-name"  autofocus placeholder="Имя Фамилия" required>
+            <input type="text" name="user-name" id="user-name"  autofocus placeholder="Имя Фамилия">
           </p>
 
           <p class="post-item">
             <label for="user-mail">Ваш e-mail:</label>
 
-            <input type="email" name="user-mail" id="user-mail" placeholder="email@example.com" required>
+            <input type="email" name="user-mail" id="user-mail" placeholder="email@example.com">
           </p>
       </div>
 
         <p class="post-item">
           <label for="text-letter">Текст письма:</label>
 
-          <textarea name="text-letter" id="text-letter" rows="4" placeholder="В свободной форме">
-          </textarea>
+          <textarea name="text-letter" id="text-letter" rows="4" placeholder="В свободной форме"></textarea>
         </p>
 
         <button class="button button-post" type="submit" name="form-post" value="Отправлено из почтовой формы сайта">Отправить</button>
