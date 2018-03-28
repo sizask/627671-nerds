@@ -28,7 +28,7 @@ a {
   width: 1180px;
   padding: 10px;
   margin: 0 auto;
-  /*margin-bottom: 65px;*/
+
   box-sizing: border-box;
 }
 
@@ -163,17 +163,17 @@ a {
 
 .motto {
   position: relative;
-
   background-color: #eeeeee;
+
 }
 .motto-wrap {
-  margin-bottom: 65px;
+  margin-bottom: 60px;
 }
 
 .motto-controls {
   position: absolute;
   left: 50%;
-  bottom: 104px;
+  bottom: 115px;
   z-index: 100;
 
   width: 160px;
@@ -222,13 +222,13 @@ a {
 
 .motto-list-item{
   display: none;
-  padding: 60px 0 80px 0;
+  padding: 59px 0 85px 0;
 }
 
 .motto-list-item:nth-child(1) {
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
-  background-position: 93% 1px;
+  background-position: 93% 0px;
 }
 .motto-list-item:nth-child(2) {
   background-image: url("../img/slide2.png");
@@ -341,6 +341,7 @@ a {
   display: flex;
   width: 300px;
   flex-direction: column;
+  margin-right: 3px;
 }
 
 
@@ -363,8 +364,8 @@ a {
 }
 .service-list-item p{
   margin-top:0px;
-  margin-bottom: 35px;
-  padding-left: 2px;
+  margin-bottom: 32px;
+  /*padding-left: 2px;*/
 }
 
 
@@ -372,7 +373,7 @@ a {
 .button {
   display: block;
   width: 160px;
-  height: 50px;
+
   padding: 13px 0;
   font: inherit;
   font-size: 16px;
@@ -471,7 +472,7 @@ a {
 }
 .about p{
   margin:0px;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
 }
 .about-loud b {
   font-size: 45px;
@@ -560,20 +561,20 @@ a {
   color: rgb(0, 0, 0);
   font-weight: bold;
   margin-top: 0px;
-  padding: 30px 3px;
+  padding: 30px 0px;
   margin-bottom: 28px;
   text-align: left;
 
-  /*background-color: yellow;*/
+
 }
 
 .facts-list td {
-  padding-top: 6px;
+  padding-top: 7px;
   font-size: 16px;
   line-height: 18px;
   color: #283136;
   width: 121px;
-  /*background-color: yellow;*/
+
 }
 
 
@@ -681,7 +682,8 @@ a {
   margin-bottom: 48px;
 }
 .contacts-info img {
-  width: 100%;
+  overflow: hidden;
+  background-position: center;
 }
 .adress b {
   display: block;
@@ -704,7 +706,7 @@ a {
 .button-adres{
    display: block;
   width: 220px;
-  padding: 13px 0;
+  padding: 15px 0;
 
   font: inherit;
   font-size: 16px;
@@ -739,6 +741,7 @@ a {
   width: 960px;
 }
 .footer-social {
+  position: relative;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -760,6 +763,39 @@ a {
 .social-button a {
   color: #e1e1e1;
 }
+.vk-icon::before{
+  content: "";
+  position: absolute;
+
+  width: 26px;
+  height: 15px;
+
+  background-image: url("../img/vk-icon.png");
+
+}
+
+.fb-icon::before{
+  content: "";
+  position: absolute;
+
+  width: 12px;
+  height: 22px;
+
+  background-image: url("../img/fb-icon.png");
+
+}
+
+.insta-icon::before{
+  content: "";
+  position: absolute;
+
+  width: 21px;
+  height: 21px;
+
+  background-image: url("../img/insta-icon.png");
+
+}
+
 .social-button:hover,
 .social-button:focus {
   background-color: #e74246;
@@ -771,8 +807,8 @@ a {
 }
 
 
-.social-button:focus img,
-.social-button:active img{
+.social-button:focus::before,
+.social-button:active::before {
   opacity:0.3;
 }
 
@@ -980,7 +1016,7 @@ textarea::placeholder {
   width: 100%;
   line-height: 55px;
   margin-top: 0px;
-  margin-bottom: 45px;
+  margin-bottom: 47px;
   padding-top: 69px;
   padding-bottom: 109px;
   text-align: center;
@@ -1046,7 +1082,7 @@ textarea::placeholder {
 
 .filter-input:hover + label,
 .filter-input:focus + label {
-  color: #663d15;
+  /*color: #663d15;*/
 }
 .filter-input-checkbox + label::before {
   content: "";
@@ -1110,10 +1146,7 @@ textarea::placeholder {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-/*width: 25px;
-  height: 25px;
-  background-image: url("../img/radio-on.svg");
-*/
+
 
 /*фильтр стоимости*/
 
@@ -1282,9 +1315,9 @@ textarea::placeholder {
 .filters-sort {
   width: 760px;
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   align-items: center;
-  margin-bottom: 80px;
+  margin-bottom: 96px;
   margin-top: 0px;
 
   font-size: 18px;
@@ -1294,15 +1327,19 @@ textarea::placeholder {
 }
 .filters-sort p{
   padding: 0px;
-  margin-top: 0px;
+  margin: 0px;
+  margin-bottom: 4px;
+  margin-right: 30px;
 }
 
 
 .filters-sort-list{
+  position: relative;
   list-style: none;
   width: 360px;
   padding: 0px;
-  margin-top: 0px;
+  margin: 0px;
+
   display: flex;
   justify-content: space-between;
 }
@@ -1315,10 +1352,6 @@ textarea::placeholder {
   text-align: left;
   text-transform: uppercase;
 }
-.current-filtr a{
-  opacity: 1;
-  color: #000000;
-}
 
 .filters-sort-list a:hover,
 .filters-sort-list a:focus {
@@ -1329,16 +1362,54 @@ textarea::placeholder {
   color: rgb(0, 0, 0);
 }
 
-.filters-sort img {
+
+.down::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+
+  width: 11px;
+  height: 10px;
+
+  background-image: url("../img/icon-down-dir.svg");
   opacity: 0.2;
 }
-.filters-sort-list img:hover,
-.filters-sort-list img:focus {
+.down:hover::before,
+.down:focus::before {
   opacity: 0.4;
 }
-.filters-sort-list img:active {
+.down:active::before {
   opacity: 1;
 }
+
+.up::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+
+  width: 11px;
+  height: 10px;
+
+  background-image: url("../img/icon-up-dir.svg");
+  opacity: 0.2;
+}
+
+.up:hover::before,
+.up:focus::before {
+  opacity: 0.4;
+}
+.up:active::before {
+  opacity: 1;
+}
+
+.current-filtr a{
+  color: #000000;
+}
+.current-filtr .up::before,
+.current-filtr .down::before {
+  opacity: 1;
+}
+
 
 .container-wrapp {
   display: flex;
@@ -1352,7 +1423,7 @@ textarea::placeholder {
   flex-wrap: wrap;
   padding: 0px;
   margin: auto;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
 }
 
 .catalog-list h3 {
@@ -1383,8 +1454,12 @@ textarea::placeholder {
 .catalog-item:hover::before,
 .catalog-item:focus::before {
   opacity: 1;
-}
 
+}
+.catalog-item:hover .catalog-modal,
+.catalog-item:focus .catalog-modal {
+  visibility: visible;
+}
 .model-page{
 
   flex-direction: column;
@@ -1393,14 +1468,14 @@ textarea::placeholder {
 }
 
 .catalog-modal {
-
+  visibility: hidden;
   position: absolute;
   bottom: 10px;
   width: 360px;
   min-height: 230px;
   padding: 30px 60px 40px 60px;
   background-color: #eeeeee;
-  outline: 2px solid red;
+
 }
 
 .catalog-item p{
@@ -1436,9 +1511,16 @@ textarea::placeholder {
   display: flex;
   width: 443px;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   margin-top: 0px;
   padding: 0px;
+  text-align: center;
+}
+
+.last-item{
+  display: block;
+  width: 264px;
+  margin-top: -13px;
 }
 
 .pagination-item a{

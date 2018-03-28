@@ -114,8 +114,8 @@
               <li class="current-filtr"><a href="#">По цене</a></li>
               <li><a href="#">По типу</a></li>
               <li><a href="#">По названию</a></li>
-              <li class="current-filtr"><a href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="по убыванию"></a></li>
-              <li><a href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="по возрастанию"></a></li>
+              <li class="current-filtr"><a class="down" href="#"></a></li>
+              <li><a class="up" href="#"></a></li>
             </ul>
           </div>
 
@@ -181,11 +181,8 @@
             <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
             <li class="pagination-item"><a href="#">2</a></li>
             <li class="pagination-item"><a href="#">3</a></li>
-            <li class="pagination-item"><a href="#">Следующая </a></li>
+            <li class="pagination-item"><a class="last-item" href="#">Следующая </a></li>
           </ul>
-
-
-
         </div>
       </section>
 </div>
@@ -218,15 +215,15 @@
       <div class="footer-wrap">
 
           <ul class="footer-social">
-             <li><a class="social-button" href="#">
-                <img src="img/vk-icon.png" width="26" height="15" alt="Вконтакте">
-                <p class="visually-hidden">Вконтакте</p></a></li>
-             <li><a class="social-button" href="#">
-                <img src="img/fb-icon.png" width="12" height="22" alt="Фейсбук">
-                <p class="visually-hidden">Фейсбук</p></a></li>
-             <li><a class="social-button" href="#">
-                <img src="img/insta-icon.png" width="21" height="21" alt="Инстаграм">
-                <p class="visually-hidden">Инстаграм</p></a></li>
+              <li><a class="social-button vk-icon" href="#">
+                <p class="visually-hidden">Вконтакте</p></a>
+              </li>
+              <li><a class="social-button fb-icon" href="#">
+                <p class="visually-hidden">Фейсбук</p></a>
+              </li>
+              <li><a class="social-button insta-icon" href="#">
+                 <p class="visually-hidden">Инстаграм</p></a>
+              </li>
           </ul>
 
         <div class="footer-friends-sale">
@@ -239,28 +236,27 @@
     <section class="modal form-post">
       <div class="modal-wrap">
         <h2>Напишите нам</h2>
-        <button class="modal-close" type="button"><p class="visually-hidden">Закрыть</p></button>
+        <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
       </div>
 
       <form class="form-post-list" action="https://echo.htmlacademy.ru" method="post">
         <div class="form-post-wrapp">
           <p class="post-item">
             <label for="user-name">Ваше имя:</label>
-            <input type="text" name="user-name" id="user-name"  autofocus placeholder="Имя Фамилия" required>
+            <input type="text" name="user-name" id="user-name"  autofocus placeholder="Имя Фамилия" >
           </p>
 
           <p class="post-item">
             <label for="user-mail">Ваш e-mail:</label>
 
-            <input type="email" name="user-mail" id="user-mail" placeholder="email@example.com" required>
+            <input type="email" name="user-mail" id="user-mail" placeholder="email@example.com">
           </p>
       </div>
 
         <p class="post-item">
           <label for="text-letter">Текст письма:</label>
 
-          <textarea name="text-letter" id="text-letter" rows="4" placeholder="В свободной форме">
-          </textarea>
+          <textarea name="text-letter" id="text-letter" rows="4" placeholder="В свободной форме"></textarea>
         </p>
 
         <button class="button button-post" type="submit" name="form-post" value="Отправлено из почтовой формы сайта">Отправить</button>
