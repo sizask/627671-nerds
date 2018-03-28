@@ -56,18 +56,16 @@
               <legend><h2>Сетка:</h2></legend>
               <ul>
                 <li class="site-type">
-                  <label class="filters-radio">
-                    <input class="visually-hidden filter-input filter-input-radio"" type="radio" name="site-type-check" value="adapt" checked>
-                      <span>Адаптивная</span class="radio-indicator">
-                  </label>
+                    <input class="visually-hidden filter-input filter-input-radio"" type="radio" name="site-type-check" id="site-adapt" value="adapt" checked>
+                    <label class="filters-radio" for="site-adapt"><span class="radio-indicator">Адаптивная</span ></label>
                 </li>
                 <li class="site-type">
-                  <label class="filters-radio">
-                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="site-type-check" value="fix">Фиксированная</label>
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="site-type-check" id="site-fix" value="fix">
+                    <label class="filters-radio" for="site-fix"><span class="radio-indicator">Фиксированная</span></label>
                 </li>
                 <li class="site-type">
-                  <label class="filters-radio">
-                    <input class="visually-hidden filter-input filter-input-radio"type="radio" name="site-type-check" value="elastic">Резиновая</label>
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="site-type-check" id="syte-elastic" value="elastic">
+                    <label class="filters-radio" for="syte-elastic">Резиновая</label>
                 </li>
               </ul>
             </fieldset>
@@ -75,20 +73,25 @@
             <fieldset class="filters-features">
               <legend><h2>Особенности:</h2></legend>
               <ul>
-                <li>
-                 <label><input type="checkbox" name="filters-features-slider" checked>Слайдер</label>
+                <li class="site-type">
+                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features-slider" id="filters-features-slider" checked>
+                 <label for="filters-features-slider">Слайдер</label>
                 </li>
-                <li>
-                  <label><input type="checkbox" name="filters-features-featuresblock">Блок преимуществ</label>
+                <li class="site-type">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features-featuresblock" id="filters-features-featuresblock">
+                  <label for="filters-features-featuresblock">Блок преимуществ</label>
                 </li>
-                <li>
-                  <label><input type="checkbox" name="filters-features-news" checked>Новости</label>
+                <li class="site-type">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features-news" id="filters-features-news" checked>
+                  <label for="filters-features-news">Новости</label>
                 </li>
-                <li>
-                  <label><input type="checkbox" name="filters-features-galery">Галерея</label>
+                <li class="site-type">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features-galery" id="filters-features-galery">
+                  <label for="filters-features-galery">Галерея</label>
                 </li>
-                <li>
-                  <label><input type="checkbox" name="filters-features-cart">Корзина</label>
+                <li class="site-type">
+                  <input  class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features-cart" id="filters-features-cart">
+                  <label for="filters-features-cart">Корзина</label>
                 </li>
               </ul>
             </fieldset>
@@ -196,7 +199,7 @@
 
           <div class="adress">
               <h2 class="visually-hidden">Контактная информация</h2>
-              <b>NЁRDS DESIGN STUDIO</b><br>
+              <b>NЁRDS DESIGN STUDIO</b>
               <p> Адрес: г. Санкт-Петербург,<br>
                ул. Б. Конюшенная, д. 19/8<br>
                <br>
