@@ -162,18 +162,19 @@ a {
 /*Слайдер*/
 
 .motto {
-  position: relative;
-  background-color: #eeeeee;
-
+  width: 100%;
+background-color: #eeeeee;
+  margin-bottom: 68px;
 }
 .motto-wrap {
-  margin-bottom: 60px;
+  position: relative;
+  padding-bottom: 0px;
 }
 
 .motto-controls {
   position: absolute;
   left: 50%;
-  bottom: 115px;
+  bottom: 105px;
   z-index: 100;
 
   width: 160px;
@@ -284,7 +285,7 @@ a {
 .motto-list-item p{
   max-width: 430px;
   margin: 0px;
-  margin-bottom: 38px;
+  margin-bottom: 40px;
 }
 
 .motto-btn {
@@ -342,12 +343,9 @@ a {
   width: 300px;
   flex-direction: column;
   margin-right: 3px;
+  padding-left: 2px;
 }
 
-
-/*.service-list-item h3{
-
-}*/
 .service-list-item img{
   margin-bottom: 25px;
 }
@@ -365,8 +363,7 @@ a {
 .service-list-item p{
   margin-top:0px;
   margin-bottom: 32px;
-  /*padding-left: 2px;*/
-}
+ }
 
 
 
@@ -665,7 +662,7 @@ a {
 
 .container-relative {
    position: relative;
-   width: 100%;
+
 }
 
 .adress {
@@ -674,14 +671,14 @@ a {
   height: 310px;
   padding: 46px 50px;
   position: absolute;
-  top: 80px;
+  top: 77px;
   background: #ffffff;
 }
 
 .contacts-info{
-
   margin-bottom: 48px;
 }
+
 .contacts-info img {
   overflow: hidden;
   background-position: center;
@@ -1192,7 +1189,7 @@ fieldset.filters-features {
 .price-controls input {
   width: 80px;
   padding: 9px 10px;
-  margin-left: 5px;
+  margin-left: 10px;
 
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
@@ -1341,14 +1338,13 @@ fieldset.filters-features {
   width: 760px;
   display: flex;
   flex-direction: column;
-  /*margin-left: 10px;*/
+
 }
 .filters-sort {
   width: 760px;
   display: flex;
-  /*justify-content: space-between;*/
   align-items: center;
-  margin-bottom: 96px;
+  margin-bottom: 95px;
   margin-top: 0px;
 
   font-size: 18px;
@@ -1553,7 +1549,7 @@ fieldset.filters-features {
 .last-item{
   display: block;
   width: 264px;
-  margin-top: -13px;
+  margin-top: -11px;
 }
 
 .pagination-item a{
