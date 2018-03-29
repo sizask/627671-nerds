@@ -838,7 +838,7 @@ a {
 
 /*Всплывающая почтовая форма*/
 .form-post {
-  display: none;
+  visibility: hidden;
   position: fixed;
   box-sizing: border-box;
   top: 40px;
@@ -1048,10 +1048,17 @@ textarea::placeholder {
   border: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .filters fieldset:first-child {
-  margin-bottom: 35px;
+  margin-bottom: 55px;
+}
+fieldset.filters-features {
+  margin-bottom: 25px;
+}
+
+.filters legend:first-child {
+  margin-bottom: 0px;
 }
 
 .filters legend {
@@ -1066,12 +1073,50 @@ textarea::placeholder {
   list-style: none;
   line-height: 18px;
 }
+.filters-site-type h2,
+.filters-features h2,
+.filters-cost-site h2 {
+  margin-top: 0px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
 
+.filters-cost-site h2 {
+  margin-bottom: 45px;
+  margin-top: 0px;
+  padding: 0px;
+}
+.filters-features h2 {
+  margin-bottom: 16px;
+}
+.filters-site-type h2{
+  margin-bottom: 17px;
+}
+.site-type {
+  margin-bottom: 23px;
+  padding-left: 35px;
+
+}
+.site-type label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.site-type:hover{
+  color: #000000;
+}
 /*фильтр стоимости*/
 
 .range-filter {
   width: 260px;
-  /*margin-top: 38px;*/
+
 }
 
 .filter-cost-site legend {
@@ -1144,8 +1189,9 @@ textarea::placeholder {
   text-transform: uppercase;
 }
 .price-controls input {
-  width: 60px;
-  padding: 8px 10px;
+  width: 80px;
+  padding: 9px 10px;
+  margin-left: 5px;
 
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
@@ -1163,28 +1209,54 @@ textarea::placeholder {
 .sort-site {
   position: relative;
 }
-.site-type {
-  margin-bottom: 19px;
-  padding-left: 45px;
 
+.filter-input-radio + label::before {
+  content: "";
+
+  position: absolute;
+  left: -35px;
+  top: -2px;
+
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.4;
 }
-.site-type label {
-  position: relative;
 
-  display: block;
-
-  cursor: pointer;
-  user-select: none;
+.filter-input-radio + label:hover::before,
+.filter-input-radio + label:focus::before,
+.filter-input-radio + label:active::before{
+  opacity: 1;
 }
-.site-type:hover{
-  color: #000000;
+
+.filter-input-radio:checked + label::before {
+  content: "";
+
+  position: absolute;
+  left: -35px;
+  top: -2px;
+
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/radio-on.svg");
+  opacity: 0.4;
+}
+
+.filter-input-radio:checked + label:hover::before,
+.filter-input-radio:checked + label:focus::before,
+.filter-input-radio:checked + label:active::before{
+  opacity: 1;
 }
 
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -40px;
-  top: 0;
+  left: -35px;
+  top: -4px;
 
   width: 23px;
   height: 23px;
@@ -1205,8 +1277,8 @@ textarea::placeholder {
   content: "";
 
   position: absolute;
-  left: -40px;
-  top: 0;
+  left: -35px;
+  top: -4px;
 
   width: 27px;
   height: 23px;
@@ -1227,47 +1299,6 @@ textarea::placeholder {
 
   opacity: 0.5;
 }
-
-.filter-input-radio + label::before {
-  content: "";
-
-  position: absolute;
-  left: -40px;
-  top: 0;
-
-  width: 25px;
-  height: 25px;
-
-  background-image: url("../img/radio-off.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  opacity: 0.4;
-}
-.filter-input-radio + label:hover::before,
-.filter-input-radio + label:focus::before,
-.filter-input-radio + label:active::before{
-  opacity: 1;
-}
-
-.filter-input-radio:checked + label::before {
-  content: "";
-
-  position: absolute;
-  left: -40px;
-  top: 0;
-
-  width: 25px;
-  height: 25px;
-
-  background-image: url("../img/radio-on.svg");
-  opacity: 0.4;
-}
-.filter-input-radio:checked + label:hover::before,
-.filter-input-radio:checked + label:focus::before,
-.filter-input-radio:checked + label:active::before{
-  opacity: 1;
-}
-
 
 .button-grey {
     font: inherit;
@@ -1294,30 +1325,6 @@ textarea::placeholder {
 }
 
 
-.filters fieldset{
-  border: none;
-}
-
-.filters-site-type h2,
-.filters-features h2,
-.filters-cost-site h2 {
-  margin-top: 0px;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: bold;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.filters-cost-site h2 {
-  margin-bottom: 45px;
-  margin-top: 0px;
-  padding: 0px;
-}
-
-.filters-site-type h2{
-  margin-bottom: 0px;
-}
 
 /*каталог*/
 .catalog {
@@ -1349,6 +1356,8 @@ textarea::placeholder {
   text-transform: uppercase;
 }
 .filters-sort p{
+  display: block;
+  width: 360px;
   padding: 0px;
   margin: 0px;
   margin-bottom: 4px;
@@ -1446,7 +1455,7 @@ textarea::placeholder {
   flex-wrap: wrap;
   padding: 0px;
   margin: auto;
-  margin-bottom: 5px;
+  margin-bottom: 1px;
 }
 
 .catalog-list h3 {
@@ -1590,3 +1599,6 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+.modal-show {
+  visibility: visible;
+}
