@@ -1,257 +1,228 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <header class="main-header">
-      <nav class="main-nav container">
-        <a class="main-header-logo" href="#">
-            <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
-        </a>
 
-          <ul class="site-nav">
-            <li ><a  href="studio.html">Студия</a></li>
-            <li><a class="link-nav" href="clients.html">Клиенты</a></li>
-            <li><a href="catalog.html">Магазин</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-          </ul>
-          <ul class="user-nav">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
 
-            <li class="cart"><a class="login-link" href="cart.html">Корзина</a></li>
-          </ul>
-
-      </nav>
-    </header>
-
-    <main>
-      <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
-
-      <section class="motto  ">
-        <div class="motto-wrap container">
-          <h2 class="visually-hidden">Слоганы и девизы</h2>
-          <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-          <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-          <input class="visually-hidden" type="radio" id="product-3" name="toggle">
-          <div class="motto-controls">
-            <label class="motto-controls-item motto-controls-item--1" for="product-1">Первый</label>
-            <label class="motto-controls-item motto-controls-item--2" for="product-2">Второй</label>
-            <label class="motto-controls-item motto-controls-item--3" for="product-3">Третий</label>
-          </div>
-          <ul class="motto-list">
-            <li class="motto-list-item">
-              <h3 class="motto-header">Долго, дорого, <br>скрупулезно.</h3>
-              <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
-              <a class="motto-btn" href="studio.html">УЗНАТЬ БОЛЬШЕ</a>
-            </li>
-            <li class="motto-list-item">
-              <h3 class="motto-header">Любим математику<br>как никто другой</h3>
-              <p>Никакого креатива, только математические формулы<br>для расчета идеальных пропорций.</p>
-              <a class="motto-btn" href="studio.html">УЗНАТЬ БОЛЬШЕ</a>
-            </li>
-            <li class="motto-list-item">
-              <h3 class="motto-header">Только ночь,<br>только хардкор</h3>
-              <p>Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
-              <a class="motto-btn" href="studio.html">УЗНАТЬ БОЛЬШЕ</a>
-            </li>
-          </ul>
+<body>
+  <header class="main-header">
+    <nav class="main-nav container">
+      <a class="main-header-logo" href="#">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
+      </a>
+      <ul class="site-nav">
+        <li><a href="studio.html">Студия</a>
+        </li>
+        <li><a class="link-nav" href="clients.html">Клиенты</a>
+        </li>
+        <li><a href="catalog.html">Магазин</a>
+        </li>
+        <li><a href="contacts.html">Контакты</a>
+        </li>
+      </ul>
+      <ul class="user-nav">
+        <li class="cart"><a class="login-link" href="cart.html">Корзина</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
+    <section class="motto">
+      <div class="motto-wrap container">
+        <h2 class="visually-hidden">Слоганы и девизы</h2>
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+        <div class="motto-controls">
+          <label class="motto-controls-item motto-controls-item--1" for="product-1">Первый</label>
+          <label class="motto-controls-item motto-controls-item--2" for="product-2">Второй</label>
+          <label class="motto-controls-item motto-controls-item--3" for="product-3">Третий</label>
         </div>
-      </section>
-
-      <section class="service container">
-        <h2 class="visually-hidden">Услуги студии</h2>
-
-          <ul class="service-list">
-
-            <li class="service-list-item">
-              <img src="img/illustration-1.png" width="300" height="146" alt="Сайты">
-              <h3 class="service-header">Веб-сайты</h3>
-              <p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
-              <a class="button button-red" href="catalog.html">ЗАКАЗАТЬ</a>
-            </li>
-
-            <li class="service-list-item">
-              <img src="img/illustration-2.png" width="300" height="146" alt="Приложения">
-              <h3 class="service-header">Приложения</h3>
-              <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-
-              <a class="button button-green" href="shop.html">ЗАКАЗАТЬ</a>
-            </li>
-
-            <li class="service-list-item">
-              <img src="img/illustration-3.png" width="300" height="146" alt="Презентации">
-              <h3 class="service-header">Презентации</h3>
-              <p>Вы даже не подозреваете, насколько вы изумительны!!</p>
-
-              <a class="button button-yellow" href="shop.html">ЗАКАЗАТЬ</a>
-            </li>
-
-          </ul>
-
-      </section>
-
-      <div class="about-facts-wrapp container">
-
-          <section class="about">
-            <h2 class="visually-hidden">О студии</h2>
-
-            <p class="about-loud"><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b> </p>
-            <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-
-
-            <h3 class="about-header">Выполняем заказы на разработку:</h3>
-            <ul class="about-list">
-                <li class="about-item item1">Веб-сайтов любой сложности</li>
-                <li class="about-item item2">Мобильных приложений для iOS и Android</li>
-                <li class="about-item item3">Слайдшоу и видео для корпоративных презентаций</li>
-            </ul>
-          </section>
-
-          <section class="facts facts-wrapp">
-
-                <h2 class="visually-hidden">Факты о компании</h2>
-                <img src="img/nerds-illustration.png" width="360" height="208" alt="logo">
-                <p>с 2004 года Любим точность во всем:</p>
-
-                <table class="facts-list">
-                  <tr>
-                    <th>146<sup class="percent">%</sup></th>
-                    <th>100<sup class="percent">%</sup></th>
-                    <th>50<sup class="percent">%</sup></th>
-                  </tr>
-
-                  <tr>
-                    <td>Уровень
-                      самоотдачи</td>
-                    <td>Соблюдение
-                      сроков</td>
-                    <td>Минимальная
-                      предоплата</td>
-                  </tr>
-                </table>
-          </section>
-      </div>
-
-      <section class="partners container">
-        <h2 class="visually-hidden">Партнеры</h2>
-        <ul class="partners-list">
-          <li class="partners-item logo-partn">
-            <a class="partners-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="img/logo-1.png" width="260" height="180" alt="HTML-Академия"></a>
+        <ul class="motto-list">
+          <li class="motto-list-item">
+            <h3 class="motto-header">Долго, дорого, <br>скрупулезно.</h3>
+            <p>Математически выверенный дизайн
+              <br>для вашего сайта или мобильного приложения.</p> <a class="motto-btn" href="studio.html">УЗНАТЬ БОЛЬШЕ</a>
           </li>
-          <li class="partners-item logo-partn">
-            <a class="partners-logo" href="#">
-              <img src="img/logo-2.png" width="260" height="180" alt="Бородинский"></a>
+          <li class="motto-list-item">
+            <h3 class="motto-header">Любим математику<br>как никто другой</h3>
+            <p>Никакого креатива, только математические формулы
+              <br>для расчета идеальных пропорций.</p> <a class="motto-btn" href="studio.html">УЗНАТЬ БОЛЬШЕ</a>
           </li>
-          <li class="partners-item logo-partn">
-            <a class="partners-logo" href="#">
-              <img src="img/logo-3.png" width="260" height="180" alt="Pink"></a>
-          </li>
-          <li class="partners-item">
-            <a class="partners-logo" href="#">
-              <img src="img/logo-4.png" width="260" height="180" alt="Mishka"></a>
+          <li class="motto-list-item">
+            <h3 class="motto-header">Только ночь,<br>только хардкор</h3>
+            <p>Работать днем, как все? Мы против этого.
+              <br>Ближе к полуночи работа только начинается.</p> <a class="motto-btn" href="studio.html">УЗНАТЬ БОЛЬШЕ</a>
           </li>
         </ul>
-      </section>
-
-      <div class="contacts-info">
-        <div class="container container-relative">
-
-          <div class="adress">
-              <h2 class="visually-hidden">Контактная информация</h2>
-              <b>NЁRDS DESIGN STUDIO</b><p> 191186, Санкт-Петербург,<br>
-                ул. Б. Конюшенная, д. 19/8<br>
-               <br>
-               тел. +7 (812) 275-75-75
-              </p>
-              <a class="button button-adres" href="#">Напишите нам</a>
-          </div>
-        </div>
-        <div class="map">
-          <iframe src="https://yandex.ru/map-widget/v1/-/CBe36VVy~D" width="100%" height="422" frameborder="0"></iframe>
-          <img  src="img/nerds-map.png" width="1200" height="422" alt="Карта проезда" >
-        </div>
       </div>
-
-    </main>
-    <footer class="main-footer container">
-      <div class="footer-wrap">
-
-          <ul class="footer-social">
-             <li><a class="social-button vk-icon" href="#">
-
-                <p class="visually-hidden">Вконтакте</p></a></li>
-             <li><a class="social-button fb-icon" href="#">
-
-                <p class="visually-hidden">Фейсбук</p></a></li>
-             <li><a class="social-button insta-icon" href="#">
-                  <p class="visually-hidden">Инстаграм</p></a></li>
-          </ul>
-
-        <div class="footer-friends-sale">
-         <p class="footer-friends">Давайте дружить, это выгодно!</p>
-         <p class="footer-sale">Скидка 10% для друзей из социальных сетей.</p>
-        </div>
-      </div>
-    </footer>
-
-
-
-   <section class="modal form-post">
-      <div class="modal-wrap">
-        <h2>Напишите нам</h2>
-        <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
-      </div>
-
-      <form class="form-post-list" action="https://echo.htmlacademy.ru" method="post">
-        <div class="form-post-wrapp">
-          <p class="post-item">
-            <label for="user-name">Ваше имя:</label>
-            <input type="text" name="user-name" id="user-name"  autofocus placeholder="Имя Фамилия">
-          </p>
-
-          <p class="post-item">
-            <label for="user-mail">Ваш e-mail:</label>
-
-            <input type="email" name="user-mail" id="user-mail" placeholder="email@example.com">
-          </p>
-      </div>
-
-        <p class="post-item">
-          <label for="text-letter">Текст письма:</label>
-
-          <textarea name="text-letter" id="text-letter" rows="4" placeholder="В свободной форме"></textarea>
-        </p>
-
-        <button class="button button-post" type="submit" name="form-post" value="Отправлено из почтовой формы сайта">Отправить</button>
-      </form>
-
-
     </section>
+    <section class="service container">
+      <h2 class="visually-hidden">Услуги студии</h2>
+      <ul class="service-list">
+        <li class="service-list-item">
+          <img src="img/illustration-1.png" width="300" height="146" alt="Сайты">
+          <h3 class="service-header">Веб-сайты</h3>
+          <p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p> <a class="button button-red" href="catalog.html">ЗАКАЗАТЬ</a>
+        </li>
+        <li class="service-list-item">
+          <img src="img/illustration-2.png" width="300" height="146" alt="Приложения">
+          <h3 class="service-header">Приложения</h3>
+          <p>Покорите топ-10 приложений в AppStore и Google Play</p> <a class="button button-green" href="shop.html">ЗАКАЗАТЬ</a>
+        </li>
+        <li class="service-list-item">
+          <img src="img/illustration-3.png" width="300" height="146" alt="Презентации">
+          <h3 class="service-header">Презентации</h3>
+          <p>Вы даже не подозреваете, насколько вы изумительны!!</p> <a class="button button-yellow" href="shop.html">ЗАКАЗАТЬ</a>
+        </li>
+      </ul>
+    </section>
+    <div class="about-facts-wrapp container">
+      <section class="about">
+        <h2 class="visually-hidden">О студии</h2>
+        <p class="about-loud"><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+        </p>
+        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+        <h3 class="about-header">Выполняем заказы на разработку:</h3>
+        <ul class="about-list">
+          <li class="about-item item1">Веб-сайтов любой сложности</li>
+          <li class="about-item item2">Мобильных приложений для iOS и Android</li>
+          <li class="about-item item3">Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+      </section>
+      <section class="facts facts-wrapp">
+        <h2 class="visually-hidden">Факты о компании</h2>
+        <img src="img/nerds-illustration.png" width="360" height="208" alt="logo">
+        <p>с 2004 года Любим точность во всем:</p>
+        <table class="facts-list">
+          <tr>
+            <th>146<sup class="percent">%</sup>
+            </th>
+            <th>100<sup class="percent">%</sup>
+            </th>
+            <th>50<sup class="percent">%</sup>
+            </th>
+          </tr>
+          <tr>
+            <td>Уровень самоотдачи</td>
+            <td>Соблюдение сроков</td>
+            <td>Минимальная предоплата</td>
+          </tr>
+        </table>
+      </section>
+    </div>
+    <section class="partners container">
+      <h2 class="visually-hidden">Партнеры</h2>
+      <ul class="partners-list">
+        <li class="partners-item logo-partn">
+          <a class="partners-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-1.png" width="260" height="180" alt="HTML-Академия">
+          </a>
+        </li>
+        <li class="partners-item logo-partn">
+          <a class="partners-logo" href="#">
+            <img src="img/logo-2.png" width="260" height="180" alt="Бородинский">
+          </a>
+        </li>
+        <li class="partners-item logo-partn">
+          <a class="partners-logo" href="#">
+            <img src="img/logo-3.png" width="260" height="180" alt="Pink">
+          </a>
+        </li>
+        <li class="partners-item">
+          <a class="partners-logo" href="#">
+            <img src="img/logo-4.png" width="260" height="180" alt="Mishka">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <div class="contacts-info">
+      <div class="container container-relative">
+        <div class="adress">
+          <h2 class="visually-hidden">Контактная информация</h2>
+          <b>NЁRDS DESIGN STUDIO</b>
+          <p>191186, Санкт-Петербург,
+            <br>ул. Б. Конюшенная, д. 19/8
+            <br>
+            <br>тел. +7 (812) 275-75-75</p> <a class="button button-adres" href="#">Напишите нам</a>
+        </div>
+      </div>
+      <div class="map">
+        <iframe src="https://yandex.ru/map-widget/v1/-/CBe36VVy~D" width="100%" height="422" frameborder="0"></iframe>
+        <img src="img/nerds-map.png" width="1200" height="422" alt="Карта проезда">
+      </div>
+    </div>
+  </main>
+  <footer class="main-footer container">
+    <div class="footer-wrap">
+      <ul class="footer-social">
+        <li>
+          <a class="social-button vk-icon" href="#">
+            <p class="visually-hidden">Вконтакте</p>
+          </a>
+        </li>
+        <li>
+          <a class="social-button fb-icon" href="#">
+            <p class="visually-hidden">Фейсбук</p>
+          </a>
+        </li>
+        <li>
+          <a class="social-button insta-icon" href="#">
+            <p class="visually-hidden">Инстаграм</p>
+          </a>
+        </li>
+      </ul>
+      <div class="footer-friends-sale">
+        <p class="footer-friends">Давайте дружить, это выгодно!</p>
+        <p class="footer-sale">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
+  </footer>
+  <section class="modal form-post">
+    <div class="modal-wrap">
+      <h2>Напишите нам</h2>
+      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span>
+      </button>
+    </div>
+    <form class="form-post-list" action="https://echo.htmlacademy.ru" method="post">
+      <div class="form-post-wrapp">
+        <p class="post-item">
+          <label for="user-name">Ваше имя:</label>
+          <input type="text" name="user-name" id="user-name" autofocus placeholder="Имя Фамилия">
+        </p>
+        <p class="post-item">
+          <label for="user-mail">Ваш e-mail:</label>
+          <input type="email" name="user-mail" id="user-mail" placeholder="email@example.com">
+        </p>
+      </div>
+      <p class="post-item">
+        <label for="text-letter">Текст письма:</label>
+        <textarea name="text-letter" id="text-letter" rows="4" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="button button-post" type="submit" name="form-post" value="Отправлено из почтовой формы сайта">Отправить</button>
+    </form>
+  </section>
+  <script>
+    var link = document.querySelector(".button-adres");
+      var popup = document.querySelector(".form-post");
+      var close = document.querySelector(".modal-close");
 
-    <script>
+          link.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            popup.classList.add("modal-show");
+          });
 
-  var link = document.querySelector(".button-adres");
-  var popup = document.querySelector(".form-post");
-  var close = document.querySelector(".modal-close");
+          close.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            popup.classList.remove("modal-show");
+          });
+  </script>
+</body>
 
-      link.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.add("modal-show");
-      });
-
-      close.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.remove("modal-show");
-      });
-    </script>
-  </body>
 </html>
-
-
-
-
