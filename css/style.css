@@ -903,6 +903,7 @@ a {
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
           box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
+  z-index: 60;
 }
 
 .modal-wrap {
