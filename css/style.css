@@ -697,6 +697,7 @@ a {
   position: absolute;
   z-index: 1;
   width: 100%;
+  border: 0;
 }
 
 .adress {
